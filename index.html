@@ -14,7 +14,7 @@
   <body data-spy="scroll" data-target="#general-nav" data-offset="0" position="relative" overflow-y="scroll">
   
 	<!--Jumbotron header-->
-    <div class="jumbotron jumbotron-fluid">
+    <div id="header" class="jumbotron jumbotron-fluid">
 		<div class="container">
 			<h1> Welcome! </h1>
 			<p>
@@ -49,7 +49,7 @@
 	<!-- Filler for scroll test-->
 		<br>
 		<br>
-		<h3 id="code">Code</h3>
+		<h3 id="code" float="center">Code</h3>
 		<br>
 		<br>
 		<br>
@@ -75,7 +75,7 @@
 		<br>
 		<br>
 		<br>
-		<h3 id="misc">Misc.</h3>
+		<h3 id="misc" float="center">Misc.</h3>
 		<br>
 		<br>
 		<br>
@@ -91,9 +91,13 @@
 		<br>
 		<br>
 		<br>
-		<p id="about">Page Bottom (Ta-dah!)</p>
+		<hr>
 	</div>
 	
+	<footer class="container">
+    <p class="float-right"><a href="#header">Back to top</a></p>
+    <p>© James McEachern </p>
+  </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
