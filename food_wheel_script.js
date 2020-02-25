@@ -19,8 +19,8 @@ function init() {
 
 function spin(){
 	var time = new Date();
-	power = 10;
-	rotate = ((((2 * Math.PI)) * time.getSeconds()) + (((2 * Math.PI) / 1000) * time.getMilliseconds()))
+	power = 2;
+	rotate = (2 * Math.PI) * (time.getMilliseconds() / 1000))
 	window.requestAnimationFrame(draw);
 }
 
@@ -36,7 +36,7 @@ function draw(){
 	ctx.save();
 	//ctx.translate(100, 100);
 	
-	rotate = rotate + power;
+	rotate = (rotate + power) % (2 * Math.PI);
 	//ctx.drawImage(sun, 1, 0, 200, 200, 0, 0, 200, 200);
 	drawImageCenter(wheel, 750, 750, 550, 550, 1, rotate);
 	ctx.restore();
