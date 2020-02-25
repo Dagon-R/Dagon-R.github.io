@@ -18,7 +18,7 @@ function init() {
 }
 
 function spin(){
-	power = 100;
+	power = 10;
 	window.requestAnimationFrame(draw);
 }
 
@@ -41,7 +41,7 @@ function draw(){
 	drawImageCenter(wheel, 750, 750, 550, 550, 1, rotate);
 	ctx.restore();
 	if(power > 1){
-		power -= .05;
+		power -= .01;
 		window.requestAnimationFrame(draw);
 	}
 	else{
