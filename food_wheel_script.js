@@ -23,7 +23,7 @@ function draw(){
 	var time = new Date();
 	rotate = (((2 * Math.PI)) * time.getSeconds() + ((2 * Math.PI) / 1000) * time.getMilliseconds());
 	//ctx.drawImage(sun, 1, 0, 200, 200, 0, 0, 200, 200);
-	drawImageCenter(sun, 150, 150, 100, 100, 1, rotate);
+	drawImageCenter(wheel, 200, 200, 550, 550, 1, rotate);
 	ctx.restore();
 
   window.requestAnimationFrame(draw);
