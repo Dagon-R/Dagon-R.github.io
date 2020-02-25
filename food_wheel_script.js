@@ -20,7 +20,7 @@ function init() {
 function spin(){
 	var time = new Date();
 	power = 2;
-	rotate = (2 * Math.PI) * (time.getMilliseconds() / 1000))
+	rotate = (2 * Math.PI) * (time.getMilliseconds() / 1000)
 	window.requestAnimationFrame(draw);
 }
 
