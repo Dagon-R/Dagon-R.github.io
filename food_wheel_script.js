@@ -15,10 +15,10 @@ const red = 315;
 function init() {
 	wheel.src = 'https://upload.wikimedia.org/wikipedia/commons/d/dc/Eight-colour-wheel-2D.png';
 	ctx = document.getElementById('canvas').getContext('2d');
-	window.requestAnimationFrame(draw);
 }
 
 function spin(){
+	var time = new Date();
 	power = 10;
 	rotate = ((((2 * Math.PI)) * time.getSeconds()) + (((2 * Math.PI) / 1000) * time.getMilliseconds()))
 	window.requestAnimationFrame(draw);
@@ -32,11 +32,10 @@ function drawImageCenter(image, x, y, cx, cy, scale, rotation){
 
 function draw(){
 	ctx.clearRect(0, 0, 2000, 2000);
-	ctx.fillRect(0, 0, 2000, 2000);// clear canvas
 	
 	ctx.save();
 	//ctx.translate(100, 100);
-	var time = new Date();
+	
 	rotate = rotate + power;
 	//ctx.drawImage(sun, 1, 0, 200, 200, 0, 0, 200, 200);
 	drawImageCenter(wheel, 750, 750, 550, 550, 1, rotate);
