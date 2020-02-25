@@ -15,6 +15,8 @@ const red = 315;
 function init() {
 	wheel.src = 'https://upload.wikimedia.org/wikipedia/commons/d/dc/Eight-colour-wheel-2D.png';
 	ctx = document.getElementById('canvas').getContext('2d');
+	ctx.canvas.width  = window.innerWidth;
+  	ctx.canvas.height = window.innerHeight;
 }
 
 function spin(){
