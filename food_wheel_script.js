@@ -2,7 +2,7 @@ var wheel = new Image();
 var ctx;
 
 function init() {
-	wheel.src = 'https://i.stack.imgur.com/I7oFb.png';
+	wheel.src = 'https://upload.wikimedia.org/wikipedia/commons/d/dc/Eight-colour-wheel-2D.png';
 	ctx = document.getElementById('canvas').getContext('2d');
 	window.requestAnimationFrame(draw);
 }
