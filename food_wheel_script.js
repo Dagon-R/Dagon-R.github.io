@@ -19,7 +19,7 @@ function init() {
 
 function spin(){
 	var time = new Date();
-	power = 2;
+	power = .2;
 	rotate = (2 * Math.PI) * (time.getMilliseconds() / 1000)
 	window.requestAnimationFrame(draw);
 }
@@ -41,7 +41,7 @@ function draw(){
 	drawImageCenter(wheel, 750, 750, 550, 550, 1, rotate);
 	ctx.restore();
 	if(power > 0){
-		power -= .01;
+		power -= .001;
 		window.requestAnimationFrame(draw);
 	}
 	else{
