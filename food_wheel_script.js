@@ -41,8 +41,11 @@ function draw(){
 	drawImageCenter(wheel, 750, 750, 550, 550, 1, rotate);
 	ctx.restore();
 	if(power > 1){
-		power--;
+		power -= .05;
 		window.requestAnimationFrame(draw);
+	}
+	else{
+	 power = 1;	
 	}
 }
 
