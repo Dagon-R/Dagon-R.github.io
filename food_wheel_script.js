@@ -16,7 +16,7 @@ function init() {
 	wheel.src = 'https://upload.wikimedia.org/wikipedia/commons/d/dc/Eight-colour-wheel-2D.png';
 	ctx = document.getElementById('canvas').getContext('2d');
 	ctx.canvas.width  = window.innerWidth;
-  	ctx.canvas.height = window.innerHeight;
+  	ctx.canvas.height = (window.innerHeight) * .8;
 }
 
 function spin(){
@@ -40,7 +40,7 @@ function draw(){
 	
 	rotate = (rotate + power) % (2 * Math.PI);
 	//ctx.drawImage(sun, 1, 0, 200, 200, 0, 0, 200, 200);
-	drawImageCenter(wheel, 750, 750, 550, 550, 1, rotate);
+	drawImageCenter(wheel, 0, 0, 550, 550, 1, rotate);
 	ctx.restore();
 	if(power > 0){
 		power -= .001;
