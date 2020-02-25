@@ -36,16 +36,17 @@ function draw(){
 	ctx.save();
 	//ctx.translate(100, 100);
 	var time = new Date();
-	rotate = ((((2 * Math.PI)) * time.getSeconds() * power) + (((2 * Math.PI) / 1000) * time.getMilliseconds()) * power);
+	rotate = ((((2 * Math.PI)) * time.getSeconds()) + (((2 * Math.PI) / 1000) * time.getMilliseconds()));
+	rotate *= power;
 	//ctx.drawImage(sun, 1, 0, 200, 200, 0, 0, 200, 200);
 	drawImageCenter(wheel, 750, 750, 550, 550, 1, rotate);
 	ctx.restore();
-	if(power > 1){
+	if(power > .01){
 		power -= .01;
 		window.requestAnimationFrame(draw);
 	}
 	else{
-	 power = 1;	
+	 power = .01;	
 	}
 }
 
