@@ -1,6 +1,7 @@
 var wheel = new Image();
 var ctx;
 var power = 0;
+var rotate = 0;
 
 const orange = 0;
 const yellow = 45;
@@ -19,6 +20,7 @@ function init() {
 
 function spin(){
 	power = 10;
+	rotate = ((((2 * Math.PI)) * time.getSeconds()) + (((2 * Math.PI) / 1000) * time.getMilliseconds()))
 	window.requestAnimationFrame(draw);
 }
 
@@ -29,24 +31,22 @@ function drawImageCenter(image, x, y, cx, cy, scale, rotation){
 } 
 
 function draw(){
-	var rotate = 0;
 	ctx.clearRect(0, 0, 2000, 2000);
 	ctx.fillRect(0, 0, 2000, 2000);// clear canvas
 	
 	ctx.save();
 	//ctx.translate(100, 100);
 	var time = new Date();
-	rotate = ((((2 * Math.PI)) * time.getSeconds()) + (((2 * Math.PI) / 1000) * time.getMilliseconds()));
-	rotate *= power;
+	rotate = rotate + power;
 	//ctx.drawImage(sun, 1, 0, 200, 200, 0, 0, 200, 200);
 	drawImageCenter(wheel, 750, 750, 550, 550, 1, rotate);
 	ctx.restore();
-	if(power > .01){
+	if(power > 0){
 		power -= .01;
 		window.requestAnimationFrame(draw);
 	}
 	else{
-	 power = .01;	
+	 power = 0;	
 	}
 }
 
