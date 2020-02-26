@@ -76,7 +76,7 @@ function request(position){
 		}
 	})
 	.then(response => {
-		return response.body.data;
+		return response.text();
 	})
 	.catch(err => {
 		console.log(err);
@@ -89,7 +89,7 @@ function request(position){
 function generate(){
 	if(navigator.geolocation){
 		var output = navigator.geolocation.getCurrentPosition(request);
-		alert(output[0]);
+		alert("good!");
 	}
 	else{
 		alert("Geolocation not supported by your browser!");
