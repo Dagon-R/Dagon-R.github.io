@@ -3,6 +3,7 @@ var arrow = new Image();
 var ctx;
 var power = 0;
 var rotate = 0;
+var generated = false;
 
 const orange = 0;
 const yellow = 45;
@@ -30,10 +31,15 @@ function initDraw(){
 }
 
 function spin(){
-	var time = new Date();
-	power = .2;
-	rotate = (2 * Math.PI) * (time.getMilliseconds() / 1000);
-	window.requestAnimationFrame(draw);
+	if(generated){
+		var time = new Date();
+		power = .2;
+		rotate = (2 * Math.PI) * (time.getMilliseconds() / 1000);
+		window.requestAnimationFrame(draw);
+	}
+	else{
+		alert("No choices have been generated!");
+	}
 }
 
 function drawImageCenter(image, x, y, cx, cy, scale, rotation){
@@ -59,6 +65,24 @@ function draw(){
 	else{
 		power = 0;	
 	}
+}
+
+function generate(){
+	fetch("https://tripadvisor1.p.rapidapi.com/locations/search?location_id=1&limit=30&sort=relevance&offset=0&lang=en_US&currency=USD&units=km&query=Lehi", {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "tripadvisor1.p.rapidapi.com",
+		"x-rapidapi-key": "088d0d9be6mshaf2d0017945fa19p1fbbaejsn3332251d4e32"
+		}
+	})
+	.then(response => {
+		console.log(response);
+	})
+	.catch(err => {
+		console.log(err);
+	});
+	
+	generated = true;
 }
 
 init();
