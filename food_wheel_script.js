@@ -63,13 +63,21 @@ function draw(){
 		window.requestAnimationFrame(draw);
 	}
 	else{
-		power = 0;	
+		power = 0;
+		var time = new Date();
+		var length = output.data.length;
+		var random = output.data[(time.getMilliseconds() % length)];
+		alert(random.name);
 	}
 }
 
+//For future reference:
+//vegetarian friendly
+//
+
 async function request(position){
 	results = [];
-	var url = 'https://tripadvisor1.p.rapidapi.com/restaurants/list-by-latlng?limit=30&currency=USD&distance=2&lunit=mi&lang=en_US&latitude=' + position.coords.latitude.toFixed(4).toString() + '&longitude=' + position.coords.longitude.toFixed(4).toString();
+	var url = 'https://tripadvisor1.p.rapidapi.com/restaurants/list-by-latlng?limit=10&currency=USD&distance=10&open_now=true&lunit=mi&lang=en_US&min_rating=3&latitude=' + position.coords.latitude.toFixed(4).toString() + '&longitude=' + position.coords.longitude.toFixed(4).toString();
 		let response = await fetch(url, {
 		"method": "GET",
 		"headers": {
