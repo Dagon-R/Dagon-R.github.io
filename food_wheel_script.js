@@ -69,7 +69,7 @@ function draw(){
 
 async function request(position){
 	results = [];
-	var url = 'https://tripadvisor1.p.rapidapi.com/restaurants/list-by-latlng?limit=30&currency=USD&distance=2&lunit=mi&lang=en_US&latitude=' + position.coords.latitude.toFixed(4).toString() + '&longitude=" + position.coords.longitude.toFixed(4).toString();
+	var url = 'https://tripadvisor1.p.rapidapi.com/restaurants/list-by-latlng?limit=30&currency=USD&distance=2&lunit=mi&lang=en_US&latitude=' + position.coords.latitude.toFixed(4).toString() + '&longitude=' + position.coords.longitude.toFixed(4).toString();
 		let response = await fetch(url, {
 		"method": "GET",
 		"headers": {
