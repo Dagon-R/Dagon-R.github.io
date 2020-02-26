@@ -69,7 +69,6 @@ function draw(){
 
 async function request(position){
 	results = [];
-	for(let food of places){
 		let response = await fetch("https://tripadvisor1.p.rapidapi.com/restaurants/list-by-latlng?limit=30&currency=USD&distance=2&lunit=mi&lang=en_US&latitude=" + position.coords.latitude.toString() + "&longitude=" + position.coords.latitude.toString(), {
 		"method": "GET",
 		"headers": {
@@ -82,16 +81,14 @@ async function request(position){
 					return null;
 				}
 				else{
-					output = response.json();
+					output = successResponse.json();
 				}
 			},
 			failResponse => {
 				return null;
 			}
 		);
-		results.push(response);
-	}
-	let output = await output.all(jobs);
+	
 	
 	generated = true;
 }
