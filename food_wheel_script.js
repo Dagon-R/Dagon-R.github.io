@@ -82,7 +82,7 @@ async function request(position){
 					return null;
 				}
 				else{
-					output = await response.json();
+					output = response.json();
 				}
 			},
 			failResponse => {
