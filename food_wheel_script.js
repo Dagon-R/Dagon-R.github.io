@@ -40,7 +40,7 @@ function drawImageCenter(image, x, y, cx, cy, scale, rotation){
 
 function draw(){
 	ctx.clearRect(0, 0, 2000, 2000);
-	drawImageCenter(arrow, 600, 600, 320, 230, 1, (.75 * Math.PI));
+	drawImageCenter(arrow, 600, 600, 320, 230, 1, (1.25 * Math.PI));
 	ctx.save();
 	//ctx.translate(100, 100);
 	
