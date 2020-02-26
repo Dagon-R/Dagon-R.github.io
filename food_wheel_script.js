@@ -66,9 +66,10 @@ function draw(){
 		power = 0;
 		var time = new Date();
 		var length = output.data.length;
-		while(typeof random.name === 'undefined'){
-		    var random = output.data[(time.getMilliseconds() % length)];
+		do{
+			var random = output.data[(time.getMilliseconds() % length)];
 		}
+		while(typeof random.name === 'undefined');
 		alert(random.name);
 	}
 }
