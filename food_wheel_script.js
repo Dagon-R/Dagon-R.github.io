@@ -67,8 +67,8 @@ function draw(){
 	}
 }
 
-function generate(){
-	fetch("https://tripadvisor1.p.rapidapi.com/locations/search?location_id=1&limit=30&sort=relevance&offset=0&lang=en_US&currency=USD&units=km&query=Lehi", {
+function request(position){
+	fetch("https://tripadvisor1.p.rapidapi.com/restaurants/list-by-latlng?limit=30&currency=USD&distance=2&lunit=mi&lang=en_US&latitude=" + position.latitude + "&longitude=" + position.latitude, {
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "tripadvisor1.p.rapidapi.com",
@@ -80,9 +80,21 @@ function generate(){
 	})
 	.catch(err => {
 		console.log(err);
+		return;
 	});
 	
 	generated = true;
+}
+
+function generate(){
+	if(navigator.geolocation){
+		navigator.geolocation.getCurrentPosition(showPosition);
+	}
+	else{
+		alert("Geolocation not supported by your browser!");
+		return;
+	}
+	
 }
 
 init();
