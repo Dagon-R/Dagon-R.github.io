@@ -67,28 +67,38 @@ function draw(){
 	}
 }
 
-function request(position){
-	let response = await fetch("https://tripadvisor1.p.rapidapi.com/restaurants/list-by-latlng?limit=30&currency=USD&distance=2&lunit=mi&lang=en_US&latitude=" + position.coords.latitude.toString() + "&longitude=" + position.coords.latitude.toString(), {
-	"method": "GET",
-	"headers": {
-		"x-rapidapi-host": "tripadvisor1.p.rapidapi.com",
-		"x-rapidapi-key": "088d0d9be6mshaf2d0017945fa19p1fbbaejsn3332251d4e32"
-		}
-	})
-	if(response.ok){
-		output = await response.json();
+async function request(position){
+	results = [];
+	for(let food of places){
+		let response = await fetch("https://tripadvisor1.p.rapidapi.com/restaurants/list-by-latlng?limit=30&currency=USD&distance=2&lunit=mi&lang=en_US&latitude=" + position.coords.latitude.toString() + "&longitude=" + position.coords.latitude.toString(), {
+		"method": "GET",
+		"headers": {
+			"x-rapidapi-host": "tripadvisor1.p.rapidapi.com",
+			"x-rapidapi-key": "088d0d9be6mshaf2d0017945fa19p1fbbaejsn3332251d4e32"
+			}
+		}). then(
+			successResponse => {
+				if(successResponse.status != 200){
+					return null;
+				}
+				else{
+					output = await response.json();
+				}
+			},
+			failResponse => {
+				return null;
+			}
+		);
+		results.push(response);
 	}
-	else{
-		alert("API Failed!");
-		return;
-	}
+	let output = await output.all(jobs);
 	
 	generated = true;
 }
 
 function generate(){
 	if(navigator.geolocation){
-		var output = navigator.geolocation.getCurrentPosition(request);
+		navigator.geolocation.getCurrentPosition(request);
 		
 	}
 	else{
