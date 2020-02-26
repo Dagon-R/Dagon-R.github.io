@@ -68,7 +68,7 @@ function draw(){
 }
 
 function request(position){
-	fetch("https://tripadvisor1.p.rapidapi.com/restaurants/list-by-latlng?limit=30&currency=USD&distance=2&lunit=mi&lang=en_US&latitude=" + position.latitude + "&longitude=" + position.latitude, {
+	fetch("https://tripadvisor1.p.rapidapi.com/restaurants/list-by-latlng?limit=30&currency=USD&distance=2&lunit=mi&lang=en_US&latitude=" + position.coords.latitude.toString() + "&longitude=" + position.coords.latitude.toString(), {
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "tripadvisor1.p.rapidapi.com",
@@ -76,7 +76,7 @@ function request(position){
 		}
 	})
 	.then(response => {
-		console.log(response);
+		return response.body.data;
 	})
 	.catch(err => {
 		console.log(err);
@@ -88,7 +88,8 @@ function request(position){
 
 function generate(){
 	if(navigator.geolocation){
-		navigator.geolocation.getCurrentPosition(showPosition);
+		var output = navigator.geolocation.getCurrentPosition(request);
+		alert(output[0]);
 	}
 	else{
 		alert("Geolocation not supported by your browser!");
