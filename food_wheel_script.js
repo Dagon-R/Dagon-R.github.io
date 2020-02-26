@@ -81,13 +81,15 @@ async function request(position){
 					return null;
 				}
 				else{
-					output = successResponse.json();
+					return successResponse.json();
 				}
 			},
 			failResponse => {
 				return null;
 			}
 		);
+		
+	output = response;
 	
 	
 	generated = true;
