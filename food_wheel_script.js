@@ -22,8 +22,8 @@ function init() {
   	ctx.canvas.height = (window.innerHeight) * .8;
 	var time = new Date();
 	rotate = (2 * Math.PI) * (time.getMilliseconds() / 1000);
-	window.requestAnimationFrame(initDraw);
-	window.requestAnimationFrame(initDraw);
+	//window.requestAnimationFrame(initDraw);
+	setTimeout(window.requestAnimationFrame(initDraw), 1000);
 }
 
 function initDraw(){
