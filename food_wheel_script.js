@@ -22,15 +22,9 @@ function init() {
   	ctx.canvas.height = (window.innerHeight) * .8;
 	var time = new Date();
 	rotate = (2 * Math.PI) * (time.getMilliseconds() / 1000);
-	//window.requestAnimationFrame(initDraw);
-	setTimeout(window.requestAnimationFrame(initDraw), 1000);
 }
 
-function initDraw(){
-	ctx.clearRect(0, 0, 2000, 2000);
-	drawImageCenter(wheel, 50, 50, 550, 550, 1, rotate);
-	drawImageCenter(arrow, 600, 600, 320, 230, 1, (1.25 * Math.PI));
-}
+
 
 function spin(){
 	if(generated){
