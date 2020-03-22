@@ -23,6 +23,7 @@ function init() {
 	var time = new Date();
 	rotate = (2 * Math.PI) * (time.getMilliseconds() / 1000);
 	window.requestAnimationFrame(initDraw);
+	window.requestAnimationFrame(initDraw);
 }
 
 function initDraw(){
