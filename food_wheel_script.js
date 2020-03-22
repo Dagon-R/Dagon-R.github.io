@@ -19,13 +19,13 @@ function init() {
 	ctx = document.getElementById('canvas').getContext('2d');
 	ctx.canvas.width  = window.innerWidth;
   	ctx.canvas.height = (window.innerHeight) * .8;
-	var time = new Date();
-	rotate = (2 * Math.PI) * (time.getMilliseconds() / 1000);
 	//window.requestAnimationFrame(initDraw);
 	setSrc(window.requestAnimationFrame(initDraw));
 }
 
 function initDraw(){
+	var time = new Date();
+	rotate = (2 * Math.PI) * (time.getMilliseconds() / 1000);
 	var rotate = (2 * Math.PI) * (time.getMilliseconds() / 1000);
 	ctx.clearRect(0, 0, 2000, 2000);
 	drawImageCenter(wheel, 50, 50, 550, 550, 1, rotate);
