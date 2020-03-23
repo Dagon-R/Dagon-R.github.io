@@ -83,8 +83,10 @@ function draw(){
 }
 
 //For future reference:
-//vegetarian friendly
-//
+//vegetarian friendly: 10665
+//vegan friendly: 10697
+//gluten free options: 10992
+//Halal: 10751
 
 async function request(position){
 	results = [];
