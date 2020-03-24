@@ -94,6 +94,7 @@ async function request(position){
 	var veganBool = "";
 	var glutenBool = "";
 	var dietary = "";
+	var minimumRating = 3.0;
 	if($('#inlineCheckbox1').is(":checked")){
 		vegetarianBool = "10665%252C";
 		var dietary = "&dietary_restrictions=";
@@ -106,7 +107,10 @@ async function request(position){
 		glutenBool = "10992%252C";
 		var dietary = "&dietary_restrictions=";
 	}
-	var url = 'https://tripadvisor1.p.rapidapi.com/restaurants/list-by-latlng?limit=11&currency=USD&distance=10' + dietary + vegetarianBool + veganBool + glutenBool + '&open_now=true&lunit=mi&lang=en_US&min_rating=3&latitude=' + position.coords.latitude.toFixed(4).toString() + '&longitude=' + position.coords.longitude.toFixed(4).toString();
+	if($('#rating').val() !== ''){
+		minimumRating = $('#rating').children("option:selected").val();
+	}
+	var url = 'https://tripadvisor1.p.rapidapi.com/restaurants/list-by-latlng?limit=11&currency=USD&distance=10' + dietary + vegetarianBool + veganBool + glutenBool + '&open_now=true&lunit=mi&lang=en_US&min_rating=' + minimumRating + '&latitude=' + position.coords.latitude.toFixed(4).toString() + '&longitude=' + position.coords.longitude.toFixed(4).toString();
 		let response = await fetch(url, {
 		"method": "GET",
 		"headers": {
