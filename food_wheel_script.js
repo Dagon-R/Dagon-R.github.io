@@ -15,7 +15,6 @@ const violet = 270;
 const red = 315;
 
 function init() {
-	$('[data-toggle="popover"]').popover();
 	ctx = document.getElementById('canvas').getContext('2d');
 	ctx.canvas.width  = window.innerWidth;
   	ctx.canvas.height = (window.innerHeight) * .8;
