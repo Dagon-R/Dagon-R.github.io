@@ -77,7 +77,19 @@ function draw(){
 			var random = output.data[(time.getMilliseconds() % length)];
 		}
 		while(typeof random.name === 'undefined');
-		alert(random.name);
+		//alert(random.name);
+		var modal = $('#foodModal');
+		modal.find('.modal-title').text(random.name);
+		if(random.website !== undefined){
+			modal.find('.modal-body').text(random.website);
+		}
+		else(random.address !== undefined){
+			modal.find('.modal-body').text(random.address);
+		}
+		else{
+			modal.find('.modal-body').text(random.web_url);
+		}
+		modal.modal(options);
 	}
 }
 
