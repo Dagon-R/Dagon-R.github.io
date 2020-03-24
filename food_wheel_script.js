@@ -89,7 +89,7 @@ function draw(){
 		else{
 			modal.find('.modal-body').text(random.web_url);
 		}
-		modal.modal(options);
+		modal.modal();
 	}
 }
 
