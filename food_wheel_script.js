@@ -94,15 +94,15 @@ async function request(position){
 	var veganBool = "";
 	var glutenBool = "";
 	var dietary = "";
-	if(document.getElementById().checked){
+	if(document.getElementById(inlineCheckbox1).checked){
 		vegetarianBool = "10665%252C";
 		var dietary = "&dietary_restrictions=";
 	}
-	if(document.getElementById().checked){
+	if(document.getElementById(inlineCheckbox2).checked){
 		veganBool = "10697%252C";
 		var dietary = "&dietary_restrictions=";
 	}
-	if(document.getElementById().checked){
+	if(document.getElementById(inlineCheckbox3).checked){
 		glutenBool = "10992%252C";
 		var dietary = "&dietary_restrictions=";
 	}
