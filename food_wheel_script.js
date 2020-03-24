@@ -107,7 +107,7 @@ async function request(position){
 		glutenBool = "10992%252C";
 		var dietary = "&dietary_restrictions=";
 	}
-	if($('#rating').children("option:selected").val() === undefined){
+	if($('#rating').children("option:selected").val() !== undefined){
 		minimumRating = $('#rating').children("option:selected").val();
 	}
 	var url = 'https://tripadvisor1.p.rapidapi.com/restaurants/list-by-latlng?limit=11&currency=USD&distance=10' + dietary + vegetarianBool + veganBool + glutenBool + '&open_now=true&lunit=mi&lang=en_US&min_rating=' + minimumRating + '&latitude=' + position.coords.latitude.toFixed(4).toString() + '&longitude=' + position.coords.longitude.toFixed(4).toString();
