@@ -106,7 +106,7 @@ async function request(position){
 		glutenBool = "10992%252C";
 		var dietary = "&dietary_restrictions=";
 	}
-	var url = 'https://tripadvisor1.p.rapidapi.com/restaurants/list-by-latlng?limit=11&currency=USD&distance=10 + dietary + vegetarianBool + veganBool + glutenBool + &open_now=true&lunit=mi&lang=en_US&min_rating=3&latitude=' + position.coords.latitude.toFixed(4).toString() + '&longitude=' + position.coords.longitude.toFixed(4).toString();
+	var url = 'https://tripadvisor1.p.rapidapi.com/restaurants/list-by-latlng?limit=11&currency=USD&distance=10' + dietary + vegetarianBool + veganBool + glutenBool + '&open_now=true&lunit=mi&lang=en_US&min_rating=3&latitude=' + position.coords.latitude.toFixed(4).toString() + '&longitude=' + position.coords.longitude.toFixed(4).toString();
 		let response = await fetch(url, {
 		"method": "GET",
 		"headers": {
