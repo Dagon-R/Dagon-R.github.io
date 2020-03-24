@@ -130,7 +130,11 @@ async function request(position){
 				return null;
 			}
 		);
-		
+	if(response.data.length == 0){
+		generated = false;
+		alert("That's a bit too specific! Try lowering the required rating.");
+		return null;
+	}
 	output = response;
 	
 	
