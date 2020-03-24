@@ -89,7 +89,24 @@ function draw(){
 
 async function request(position){
 	results = [];
-	var url = 'https://tripadvisor1.p.rapidapi.com/restaurants/list-by-latlng?limit=11&currency=USD&distance=10&open_now=true&lunit=mi&lang=en_US&min_rating=3&latitude=' + position.coords.latitude.toFixed(4).toString() + '&longitude=' + position.coords.longitude.toFixed(4).toString();
+	var rating = 3.0;
+	var vegetarianBool = "";
+	var veganBool = "";
+	var glutenBool = "";
+	var dietary = "";
+	if(document.getElementById().checked){
+		vegetarianBool = "10665%252C";
+		var dietary = "&dietary_restrictions=";
+	}
+	if(document.getElementById().checked){
+		veganBool = "10697%252C";
+		var dietary = "&dietary_restrictions=";
+	}
+	if(document.getElementById().checked){
+		glutenBool = "10992%252C";
+		var dietary = "&dietary_restrictions=";
+	}
+	var url = 'https://tripadvisor1.p.rapidapi.com/restaurants/list-by-latlng?limit=11&currency=USD&distance=10 + dietary + vegetarianBool + veganBool + glutenBool + &open_now=true&lunit=mi&lang=en_US&min_rating=3&latitude=' + position.coords.latitude.toFixed(4).toString() + '&longitude=' + position.coords.longitude.toFixed(4).toString();
 		let response = await fetch(url, {
 		"method": "GET",
 		"headers": {
