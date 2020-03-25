@@ -83,7 +83,7 @@ function draw(){
 		if(random.website !== undefined){
 			modal.find('.modal-body').innerHTML(random.website);
 			if(random.address !== undefined){
-				modal.find('.modal-body').innerHTML(random.address + <br> + random.website)
+				modal.find('.modal-body').innerHTML(random.address + "<br>" + random.website)
 			}
 			else{
 				modal.find('.modal-body').innerHTML(random.website);
