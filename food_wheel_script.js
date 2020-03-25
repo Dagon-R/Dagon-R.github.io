@@ -82,17 +82,17 @@ function draw(){
 		modal.find('.modal-title').text(random.name);
 		if(random.website !== undefined){
 			if(random.address !== undefined){
-				modal.find('.modal-body').html(random.address + "<br>" + random.website)
+				modal.find('.modal-body').html(random.address + "<br>" + "<a href=\"" + random.website + "\">Website<\\a>");
 			}
 			else{
-				modal.find('.modal-body').html(random.website);
+				modal.find('.modal-body').html("<a href=\"" + random.website + "\">Website<\\a>");
 			}
 		}
 		else if(random.address !== undefined){
 			modal.find('.modal-body').html(random.address);
 		}
 		else{
-			modal.find('.modal-body').html(random.web_url);
+			modal.find('.modal-body').html("<a href=\"" + random.web_url + "\">Website<\\a>");
 		}
 		modal.modal();
 	}
