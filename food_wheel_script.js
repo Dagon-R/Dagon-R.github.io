@@ -81,19 +81,18 @@ function draw(){
 		var modal = $('#foodModal');
 		modal.find('.modal-title').text(random.name);
 		if(random.website !== undefined){
-			modal.find('.modal-body').innerHTML(random.website);
 			if(random.address !== undefined){
-				modal.find('.modal-body').innerHTML(random.address + "<br>" + random.website)
+				modal.find('.modal-body').html(random.address + "<br>" + random.website)
 			}
 			else{
-				modal.find('.modal-body').innerHTML(random.website);
+				modal.find('.modal-body').html(random.website);
 			}
 		}
 		else if(random.address !== undefined){
-			modal.find('.modal-body').innerHTML(random.address);
+			modal.find('.modal-body').html(random.address);
 		}
 		else{
-			modal.find('.modal-body').innerHTML(random.web_url);
+			modal.find('.modal-body').html(random.web_url);
 		}
 		modal.modal();
 	}
