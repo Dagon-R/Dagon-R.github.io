@@ -1,41 +1,160 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-	<title>404 HTML Template by Colorlib</title>
-
-	<!-- Google font -->
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet">
-
-	<!-- Custom stlylesheet -->
-	<link type="text/css" rel="stylesheet" href="errorStyle.css" />
-
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
-
-</head>
-
-<body>
-
-	<div id="notfound">
-		<div class="notfound">
-			<div class="notfound-404">
-				<h1>Oops!</h1>
-				<h2>This page is experiencing issues</h2>
+    <title>Project Site</title>
+  </head>
+  
+  <body>
+  
+	<!--Jumbotron header-->
+    <div id="header" class="jumbotron jumbotron-fluid" style="margin: 0; padding: 24px;">
+		<div class="container" style="margin: 12px; padding: 0;">
+			<div class="float-right" width="33%">
 			</div>
-			<a>Maybe try again later?</a>
+			<h1> Computer Science Courses </h1>
+			<p>
+			Introductory classes covering the same subjects and skills as entry level courses in a standard university curriculum.
+			</p>
+			<p>
+			These courses are designed with true beginners in mind, whether a younger student or a curious professional looking to learn a new skill or hobby. Most of the more advanced classes require that "Introduction to Computer Science" be taken first, or that the concepts listed under that class description are understood beforehand.
+			<br>
+			<br>
+			<br>
+			Classes are twice weekly, with the first class being taught once each Monday through Wednesday, and the second on Thursday through Saturday to allow for more flexible attendence. Students will need Administrator access to their computers (i.e, the ability to download, install, and run arbitrary programs).
+			</p>
+		</div>
+	
+	</div>
+	
+	<div style="background-image: url(ExampleCode.png); background-size: 100% 100%; background-attachment: fixed; padding: 72px;">
+	
+	
+	<div class="accordion" id="accordionExample">
+	  <div class="card">
+		<div class="card-header" id="headingOne">
+		  <h2 class="mb-0">
+			<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+			  Introduction to Computer Science
+			</button>
+		  </h2>
+		</div>
+		<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+		  <div class="card-body">
+			Starts from square one to teach new programmers the basics, including tools and software relevant to producing code. Covered topics include variable types, control structures, functional programming, pointers and pointer logic, as well as introductions to Object Oriented Programming.
+		  </div>
+		</div>
+	  </div>
+	  
+	  <div class="card">
+		<div class="card-header" id="headingTwo">
+		  <h2 class="mb-0">
+			<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+			  Data Structures and Algorithms
+			</button>
+		  </h2>
+		</div>
+		<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+		  <div class="card-body">
+			For more advanced projecs, a solid grasp of different data structures and the mathematical concepts behind algorithmic design is important. Learn about Stacks, Queues, Deques, Trees, Sorting Algorthims, and other cornerstones of Computer Science.
+			<br><br>
+				<h5>It is recommended that the Introductory course is taken first</h5>
+		  </div>
+		</div>
+	  </div>
+	  
+	  <div class="card">
+		<div class="card-header" id="headingThree">
+		  <h2 class="mb-0">
+			<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+			  Embedded Software
+			</button>
+		  </h2>
+		</div>
+		<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+		  <div class="card-body">
+			Embedded software is any kind of code that runs on a computer that isn't a PC. This ranges from consumer electronics (such as bluetooth speakers and smart TVs) all the way up to critical control systems (such as in avionics and self driving cars). This class uses simulated hardware for practice, but a beginners hardware kit can be included for an extra fee.
+			<br><br>
+				<h5>It is recommended that the Introductory course is taken first</h5>
+		  </div>
+		</div>
+	  </div>
+		
+		<div class="card">
+			<div class="card-header" id="headingFour">
+			  <h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+				  Android App Development
+				</button>
+			  </h2>
+			</div>
+			<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+			  <div class="card-body">
+				Working in Java and Android studios, learn how to build a simple application that runs on an Android device (or emulator). The cumulative goal of this class is to finish with a simple but functional app that could hypothetically be published on Google Play.
+				<br><br>
+				<h5>It is recommended that the Introductory course is taken first</h5>
+			  </div>
+			</div>
+		  </div>	
+		  
+		  <div class="card">
+			<div class="card-header" id="headingFive">
+			  <h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+				  Web Development
+				</button>
+			  </h2>
+			</div>
+			<div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+			  <div class="card-body">
+				Working with HTML, CSS, Javascipt, Git, and the Bootstrap library, learn to create simple but effective web pages (like this one!). Although the artisitic choices fall more under graphic design than computer science, the skills here will be useful to anyone who wants to work with websites in the future. At the end of the class, use Github's free hosting to upload your site and make it publicly visible.
+				<br><br>
+				<h5>It is recommended that the Introductory course is taken first</h1>
+			  </div>
+			</div>
+		</div>
+		
+		<div class="card">
+			<div class="card-header" id="headingSix">
+			  <h2 class="mb-0">
+				<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+				  Computer Hardware
+				</button>
+			  </h2>
+			</div>
+			<div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+			  <div class="card-body">
+				If you've ever wanted to learn more about the actual hardware of your computer, this is a great class to get familiar with the terminology. By the end of this class, you'll be able to talk about a computer's specifications (such as clock speeds, cache sizes, and core count), as well as make a list of components to actually build your own computer.
+			  </div>
+			</div>
 		</div>
 	</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfcBzIv8CQXje52_o8zJiu2kP88zJhmjmXtR8GLqKvZn3njjw/viewform?embedded=true" width="100%" height="1823" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+		<br>
+	</div>
+	
+	
+	<footer id="about" class="container">
+    <p class="float-right"><a href="#header">Back to top</a></p>
+    <p>© James McEachern </p>
+  </footer>
 
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://unpkg.com/gojs/release/go-debug.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
 </html>
