@@ -6,18 +6,18 @@
 
 :root {
 	--white: #FFFFFF;
-	--scale: 1;
+	--scale: 1.5;
 }
 
 @media (min-width: 800px) {
 	:root {
-		--scale: 1.5;
+		--scale: 2;
 	}
 }
 
 @media (min-width: 1600px) {
 	:root {
-		--scale: 2;
+		--scale: 2.5;
 	}
 }
 
