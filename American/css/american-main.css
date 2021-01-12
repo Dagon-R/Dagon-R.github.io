@@ -4,6 +4,10 @@
  * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-one-page-wonder/blob/master/LICENSE)
  */
 
+:root {
+	--white: #FFFFFF;
+}
+
 body {
   font-family: 'Lato';
 }
@@ -79,35 +83,35 @@ header.masthead .masthead-content .masthead-subheading {
   font-size: 2rem;
 }
 
-header.five-star .bg-circle {
+header.masthead .bg-circle {
   z-index: 0;
   position: absolute;
   border-radius: 100%;
   background: linear-gradient(0deg, #ee1010 0%, #eeeeee 80%);
 }
 
-header.five-star .bg-circle-1 {
+header.masthead .bg-circle-1 {
   height: 90rem;
   width: 90rem;
   bottom: -55rem;
   left: -55rem;
 }
 
-header.five-star .bg-circle-2 {
+header.masthead .bg-circle-2 {
   height: 50rem;
   width: 50rem;
   top: -25rem;
   right: -25rem;
 }
 
-header.five-star .bg-circle-3 {
+header.masthead .bg-circle-3 {
   height: 20rem;
   width: 20rem;
   bottom: -10rem;
   right: 5%;
 }
 
-header.five-star .bg-circle-4 {
+header.masthead .bg-circle-4 {
   height: 30rem;
   width: 30rem;
   top: -5rem;
@@ -159,42 +163,4 @@ header.five-star .bg-circle-4 {
   box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.5);
 }
 
-.star-five {
-  margin: 50px 0;
-  position: relative;
-  display: block;
-  color: red;
-  width: 0px;
-  height: 0px;
-  border-right: 100px solid transparent;
-  border-bottom: 70px solid red;
-  border-left: 100px solid transparent;
-  transform: rotate(35deg);
-}
-.star-five:before {
-  border-bottom: 80px solid red;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  position: absolute;
-  height: 0;
-  width: 0;
-  top: -45px;
-  left: -65px;
-  display: block;
-  content: '';
-  transform: rotate(-35deg);
-}
-.star-five:after {
-  position: absolute;
-  display: block;
-  color: red;
-  top: 3px;
-  left: -105px;
-  width: 0px;
-  height: 0px;
-  border-right: 100px solid transparent;
-  border-bottom: 70px solid red;
-  border-left: 100px solid transparent;
-  transform: rotate(-70deg);
-  content: '';
 }
