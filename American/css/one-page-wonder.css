@@ -83,7 +83,7 @@ header.masthead .bg-circle {
   z-index: 0;
   position: absolute;
   border-radius: 100%;
-  background: linear-gradient(0deg, #ee0979 0%, #ff6a00 100%);
+  background: linear-gradient(0deg, #ee1010 0%, #eeeeee 100%);
 }
 
 header.masthead .bg-circle-1 {
