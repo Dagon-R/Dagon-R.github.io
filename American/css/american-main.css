@@ -113,21 +113,21 @@ header.masthead .bg-circle-1 {
 header.masthead .bg-circle-2 {
   height: calc(10rem * var(--scale));
   width: calc(10rem * var(--scale));
-  top: -25rem;
-  right: -25rem;
+  top: calc(-5rem * var(--scale));
+  left: calc(-5rem * var(--scale));
 }
 
 header.masthead .bg-circle-3 {
   height: calc(5rem * var(--scale));
   width: calc(5rem * var(--scale));
-  bottom: -10rem;
-  right: 5%;
+  bottom: calc(-2rem * var(--scale));
+  right: calc(2% * var(--scale));
 }
 
 header.masthead .bg-circle-4 {
   height: calc(15rem * var(--scale));
   width: calc(15rem * var(--scale));
-  bottom: calc(-2rem * var(--scale));
+  top: calc(-2rem * var(--scale));
   right: calc(10% * var(--scale));
 }
 
