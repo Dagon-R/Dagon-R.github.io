@@ -11,13 +11,13 @@
 
 @media (min-width: 800px) {
 	:root {
-		--headings-multiplier: 2;
+		--scale: 2;
 	}
 }
 
 @media (min-width: 1600px) {
 	:root {
-		--headings-multiplier: 3;
+		--scale: 3;
 	}
 }
 
