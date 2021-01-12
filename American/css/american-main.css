@@ -11,13 +11,13 @@
 
 @media (min-width: 800px) {
 	:root {
-		--scale: 2;
+		--scale: 1.5;
 	}
 }
 
 @media (min-width: 1600px) {
 	:root {
-		--scale: 3;
+		--scale: 2;
 	}
 }
 
