@@ -6,6 +6,19 @@
 
 :root {
 	--white: #FFFFFF;
+	--scale: 1;
+}
+
+@media (min-width: 800px) {
+	:root {
+		--headings-multiplier: 2;
+	}
+}
+
+@media (min-width: 1600px) {
+	:root {
+		--headings-multiplier: 3;
+	}
 }
 
 body {
@@ -91,10 +104,10 @@ header.masthead .bg-circle {
 }
 
 header.masthead .bg-circle-1 {
-  height: 90rem;
-  width: 90rem;
-  bottom: -55rem;
-  left: -55rem;
+  height: calc(20rem * var(--scale));
+  width: calc(20rem * var(--scale));
+  bottom: calc(-10rem * var(--scale));
+  left: calc(-10rem * var(--scale));
 }
 
 header.masthead .bg-circle-2 {
