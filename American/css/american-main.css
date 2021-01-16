@@ -5,7 +5,6 @@
  */
 
 :root {
-	--white: #FFFFFF;
 	--scale: 1.5;
 }
 
@@ -15,9 +14,15 @@
 	}
 }
 
-@media (min-width: 1600px) {
+@media (min-width: 1200px) {
 	:root {
 		--scale: 2.5;
+	}
+}
+
+@media (min-width: 1600px) {
+	:root {
+		--scale: 3;
 	}
 }
 
@@ -41,6 +46,7 @@ h6 {
   font-size: 0.9rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
+  color: #111;
 }
 
 .bg-black {
@@ -149,31 +155,40 @@ header.masthead .bg-circle-4 {
 }
 
 .btn-primary {
-  background-color: #ee0979;
-  border-color: #ee0979;
+  background-color: #fff;
+  border-color: #fff;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #bd0760 !important;
-  border-color: #bd0760 !important;
+  background-color: #aaa !important;
+  border-color: #aaa !important;
 }
 
 .btn-primary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(238, 9, 121, 0.5);
+  box-shadow: 0 0 0 0.9rem rgba(ff, ff, ff, 1);
 }
 
 .btn-secondary {
-  background-color: #ff6a00;
-  border-color: #ff6a00;
+  background-color: #aaa;
+  border-color: #aaa;
+  color: #fff !important;
 }
 
 .btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover {
-  background-color: #cc5500 !important;
-  border-color: #cc5500 !important;
+  background-color: #ddd !important;
+  border-color: #ddd !important;
+  color: #000 !important;
 }
 
 .btn-secondary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.5);
+  box-shadow: 0 0 0 0.9rem rgba(255, 255, 255, 1);
+}
+
+.carousel-inner > .item >img{
+  min-height : 300px;
+  max-height : 300px;
+  width : 50%;
+  margin: auto;
 }
 
 }
