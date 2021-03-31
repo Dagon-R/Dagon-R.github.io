@@ -5,104 +5,60 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS -
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	-->
+	<!-- Skeleton CSS -->
+	<link rel="stylesheet" href="skeleton/normalize.css">
+	<link rel="stylesheet" href="skeleton/skeleton.css">
+	<link rel="stylesheet" href="resume_page.css">
 
     <title>Project Site</title>
   </head>
   
-  <body data-spy="scroll" data-target="#general-nav" data-offset="0" position="relative" overflow-y="scroll">
+  <body>
+	
+	<div class="main-content">
   
-	<!--Jumbotron header-->
-    <div id="header" class="jumbotron jumbotron-fluid">
 		<div class="container">
-			<div class="float-right" width="33%">
-				<img src="https://imgs.xkcd.com/comics/words_for_small_sets.png">
+			<div class="row header-row header">
+				<div class="two-thirds column header-text">
+					<div class="header-title"><h1> James McEachern </h1></div>
+					<div class="header-subtitle"><h4>Developer, Creator, Designer</h4></div>
+				</div>
+				<div class="one-third column header-image">
+					<img class="header-logo" src="images/header_image.svg">
+				</div>
 			</div>
-			<h1> Welcome! </h1>
-			<p>
-			My name is James McEachern, and I'm a Computer Engineer with delusions of granduer.
-			</p>
-			<br><br>
-			<p>
-			From game design to politics to creative writing (Not to mention my educational emphasis, programming), if it's interesting I've probably thought about doing it. 
-			The goal of this website is to catalogue and index these various side projects in a way and a place that makes them convenient to reference. 
-			</p>
 		</div>
-	
+		<!--Jumbotron header-->
+		
+		
+		<!--Nav Bar--
+		<nav id="general_nav" class="navbar">
+			<div class="container">
+				<ul class="navbar_list">
+					<li class="navbar_item">
+						Projects
+					</li>
+				
+				</ul>
+			</div>
+		</nav>
+		-->
+		
+		<div>
+		<!-- Filler for scroll test-->
+			
+		</div>
+		
 	</div>
 	
-	<!--Nav Bar-->
-	<nav id="general-nav" class="navbar sticky-top navbar-light bg-light">
-		<a class="navbar-brand" href="#">Projects</a>
-		<ul class="nav nav-pills">
-			<li class="nav-item">
-				<a class="nav-link" href="#code">Code</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#misc">Misc.</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#about">About</a>
-			</li>
-		</ul>
-	</nav>
-	
-	<div>
-	<!-- Filler for scroll test-->
-		<br>
-		<br>
-		<h3 id="code" float="center">Code</h3>
-		<br>
-		<a href="food_wheel.html">wheel</a>
-		<br>
-		<a href="American/index.html">American test</a>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<h3 id="misc" float="center">Misc.</h3>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<hr>
-	</div>
-	
-	<footer id="about" class="container">
-    <p class="float-right"><a href="#header">Back to top</a></p>
-    <p>© James McEachern </p>
-  </footer>
+	<footer id="about" class="container footer">
+		<p class="float-right"><a href="#header">Back to top</a></p>
+		<p>This website was built with the <a href="http://getskeleton.com/">Skeleton Framework</a>. <a href="https://thenounproject.com/search/?q=project&i=1969751">Header image by Nithinan Tatah from the Noun Project.</a></p>
+		<p>© James McEachern 2021</p>
+	</footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
