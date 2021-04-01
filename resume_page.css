@@ -18,6 +18,7 @@ body{
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	flex-wrap: wrap-reverse;
 }
 
 .header-row{
@@ -33,10 +34,6 @@ body{
 	text-align: center;
 }
 
-
-
-
-
 .header-title{
 	flex: 2 0 auto;
 }
@@ -45,8 +42,31 @@ body{
 	flex: 1 0 auto;
 }
 
+.content-header{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap-reverse;
+	padding: 2rem 2rem;
+	margin: 10px;
+}
+
+.content-header-logo{
+	
+}
+
+.content-header-text{
+	border-bottom: solid .15em #ccc;
+}
+
 .footer{
 	//Makes the footer stick to bottom
 	flex-shrink: 0;
+	padding: 2rem;
 	border-top: solid .15em #ccc;
+}
+
+.footer > p{
+	line-height: 0;
 }
