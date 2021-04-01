@@ -56,6 +56,10 @@ body{
 	
 }
 
+.filler{
+	text-align: center;
+}
+
 .content-header-text{
 	border-bottom: solid .15em #ccc;
 }
