@@ -1,0 +1,20 @@
+<section title="experience">
+	<entry style="basic">
+		<title>Virtel</title>
+		<subtitle>Virtual Reality Language Learning</subtitle>
+		<description>
+			Virtel was a small team working to create software for foreign language education in Virtual Reality.
+			Although now defunct, the team was at one point poised to publish an initial package of Latin American Spanish learning environments and activities.
+			</description>
+		<technology>Virtual Reality | Unity | C#</technology>
+	</entry>
+	<entry style="basic">
+		<title>Mozenda</title>
+		<subtitle>Commercial Web Scraping</subtitle>
+		<description>
+			Mozenda is a SaaS Web Scraping company based out of Utah.
+			Clients contract an individual specialist to design and customize agents built using Mozenda's proprietary software, as well as data postprocessing and formatting.
+			</description>
+		<technology>HTML | XML | JavaScript</technology>
+	</entry>
+</section>
