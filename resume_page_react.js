@@ -21,15 +21,38 @@ function renderXML(){
 
 function renderSection(section){
 	var entryList = section.getElementsByTagName("entry");
+	var sectionName = section.getAttribute("title");
+	var root = document.getElementById(sectionName);
+	for(var i = 0; i < entryList.length; i++){
+		var entry = entryList[i];
+		var newEntry = {
+			title = entry.getElementsByTagName(title)[0].childNodes[0].nodeValue;
+			subtitle = entry.getElementsByTagName(title)[0].childNodes[0].nodeValue;
+			description = entry.getElementsByTagName(title)[0].childNodes[0].nodeValue;
+			technology = entry.getElementsByTagName(title)[0].childNodes[0].nodeValue;
+		}
+		ReactDOM.render(
+			<BasicEntry entry={newEntry}>,
+			root);
+	}
 }
 
-class BasicEntry extends React.Component {
-	render(){
-		
-		return (
-			
-		);
-	}
+function BasicEntry(props){
+	return (
+		<div className="container">
+			<div className={"basic-entry"}>
+				<div className="entry-header">
+					{props.entry.title}
+				</div>
+				</div className="entry-subtitle">
+					[props.entry.subtitle}		
+				</div>
+				</div className="entry-description">
+					[props.entry.description}		
+				</div>
+			</div>
+		</div>
+	);
 }
 
 xhttp.onreadystatechange = parseFile();
