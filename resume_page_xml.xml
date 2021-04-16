@@ -1,20 +1,141 @@
-<section title="experience">
-	<entry style="basic">
-		<title>Virtel</title>
-		<subtitle>Virtual Reality Language Learning</subtitle>
+<xml>
+	<!-- blank entry to copy -->
+	<entry style="left">
+		<title></title>
+		<subtitle></subtitle>
 		<description>
-			Virtel was a small team working to create software for foreign language education in Virtual Reality.
-			Although now defunct, the team was at one point poised to publish an initial package of Latin American Spanish learning environments and activities.
-			</description>
-		<technology>Virtual Reality | Unity | C#</technology>
+			
+		</description>
+		<technology></technology>
+		<url></url>
 	</entry>
-	<entry style="basic">
-		<title>Mozenda</title>
-		<subtitle>Commercial Web Scraping</subtitle>
-		<description>
-			Mozenda is a SaaS Web Scraping company based out of Utah.
-			Clients contract an individual specialist to design and customize agents built using Mozenda's proprietary software, as well as data postprocessing and formatting.
+	
+	<section title="skills">
+		<entry style="left">
+			<title>Embedded Systems</title>
+			<subtitle></subtitle>
+			<description>
+				Very familiar with the C language, having worked with Arduino, the MSP430, and the PINQ board.
+				Also includes (tangentially related) experience using FPGAs and building software defined processors.
 			</description>
-		<technology>HTML | XML | JavaScript</technology>
-	</entry>
-</section>
+			<technology>C | Assembly | Verilog | Linux Drivers</technology>
+			<url></url>
+		</entry>
+		
+		<entry style="left">
+			<title>Android Development</title>
+			<subtitle></subtitle>
+			<description>
+				Building apps for the Android Ecosystem entails understanding Java, and also knowing the all of the Life-cycle stuff that comes with the API.
+				There's also the need to understand app design best practices to make a good UI.
+			</description>
+			<technology>Java | XML | Android Studio</technology>
+			<url></url>
+		</entry>
+		
+		<entry style="left">
+			<title>Algorithm Design</title>
+			<subtitle></subtitle>
+			<description>
+				All of the different ways that difficult problems can be (at worst) solved and (at best) solved efficiently.
+				Not always needed for a simple project, but always worth knowing.
+			</description>
+			<technology>Graphs | Sorting | Heuristics | "Big O" | Dynamic Programming</technology>
+			<url></url>
+		</entry>
+		
+		<entry style="left">
+			<title>Version and Package Control</title>
+			<subtitle></subtitle>
+			<description>
+				You want to keep all your files in order, but some absolute lunatic has the audacity to try to work on the same project!
+				We can figure something out, I'm sure.
+			</description>
+			<technology>Git | Github | Npm</technology>
+			<url></url>
+		</entry>
+	</section>
+
+	<section title="projects">
+		<entry style="left">
+			<title>Distraction Break</title>
+			<subtitle>Time Management through Interruption</subtitle>
+			<description>
+				Distract break is a simple extension that allows you to build a list of distracting sites and configure a limiting timer.
+				The app differentiates between time spent on productive sites and time spent on blacklisted ones, and increments the timer when more time is spent unproductively.
+			</description>
+			<technology>HTML/CSS | JavaScript | Chrome API</technology>
+			<url>https://chrome.google.com/webstore/detail/distract-break/gnkddjnjkddnhdlokndnlfehpcahnfba?hl=en-US</url>
+		</entry>
+		
+		<entry style="left">
+			<title>American Brands</title>
+			<subtitle>Prototype Websites to help you buy American</subtitle>
+			<description>
+				Working in conjunction with some colleagues who had an idea but no programming skills, American Brands has the goal of building an system of verifying the origin and contents of products that claim to be "Made in the USA".
+				My role in project was mostly limited to web design and tech logistics.
+			</description>
+			<technology>HTML/CSS | Bootstrap</technology>
+			<url>American/index.html</url>
+		</entry>
+		
+		<entry style="left">
+			<title>Capstone Project</title>
+			<subtitle>Self Aligning Free Space Optics</subtitle>
+			<description>
+				My Capstone project team was contracted by Raytheon to design and develop a system that would allow for easy self-alignment of a Free Space Optics (FSO) systems.
+				By using Computer Vision and an Arduino micro controller we were able to create a system that could identify and pivot towards a target at distances of up to one Kilometer.
+			</description>
+			<technology>C++ | Python | Arduino | OpenCV</technology>
+			<url></url>
+		</entry>
+		
+		<entry style="left">
+			<title>Food Wheel</title>
+			<subtitle>For when your Friends are Unhelpful</subtitle>
+			<description>
+				This is a really simple page that uses your location data to pull a list of local restaurants and select one at random.
+				There is a bit of customization if you want to limit some options, but it's very rudimentary.
+				Perfect when nobody will agree on anything, because it will easily prove that your group can agree on what everybody DOESN'T want.
+			</description>
+			<technology>HTML/CSS | JavaScript</technology>
+			<url>food_wheel.html</url>
+		</entry>
+	</section>
+
+	<section title="experience">
+		<entry style="left">
+			<title>Virtel</title>
+			<subtitle>Virtual Reality Language Learning</subtitle>
+			<description>
+				Virtel was a small team working to create software for foreign language education in Virtual Reality.
+				Although now defunct, the team was at one point poised to publish an initial package of Latin American Spanish learning environments and activities.
+				</description>
+			<technology>Virtual Reality | Unity | C#</technology>
+			<url></url>
+		</entry>
+		
+		<entry style="left">
+			<title>Mozenda</title>
+			<subtitle>Commercial Web Scraping</subtitle>
+			<description>
+				Mozenda is a SaaS Web Scraping company based out of Utah.
+				Clients contract an individual specialist to design and customize agents built using Mozenda's proprietary software, as well as data post-processing and formatting.
+				</description>
+			<technology>HTML/CSS | XML | JavaScript</technology>
+			<url>https://www.mozenda.com/</url>
+		</entry>
+		
+		<entry style="left">
+			<title>BYU Retail Technology</title>
+			<subtitle>Support that Covers all the Holes</subtitle>
+			<description>
+				BYU Retail Technology is the department that is responsible for covering every part of BYU that has to do with Food Service and Housing.
+				Surprisingly enough, it is not directly associated with the Office of IT Support, but is instead directly under Housing.
+				Because of that, I got to work with a LOT of different things, from Register UIs to Credit Card Systems.
+			</description>
+			<technology>Hardware | Windows Admin</technology>
+			<url></url>
+		</entry>
+	</section>
+</xml>

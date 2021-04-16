@@ -15,14 +15,13 @@
 	<!-- React -->
 	<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
 	<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
-	<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-	<script type="text/babel" src="resume_page_react.js"></script>
+	<script type="module" src="resume_page_react.js"></script>
 
     <title>Project Site</title>
   </head>
   
   <body>
-	
+	<header id="top"></header>
 	<div class="main-content">
   
 		<div class="container">
@@ -50,8 +49,10 @@
 				</div>
 			</div>
 			
-			<div class="skills entries">
-			
+			<div id ="skills" class="entries">
+				<div class="container">
+				
+				</div>
 			</div>
 			
 		</div>
@@ -68,9 +69,11 @@
 				</div>
 			</div>
 			
-			<div class="projects entries">
-			
+			<div id ="projects" class="entries">
+			<div class="container">
+				
 			</div>
+		</div>
 			
 		</div>
 		
@@ -85,23 +88,22 @@
 					</div>
 				</div>
 			</div>
-		</div>
 		
-		<div id ="experience" class="entries">
-			<div class="container">
-				This website is in the middle of being constructed, sorry there's nothing here...
-				I do appreciate your optimism in scrolling all the way down though!
+		
+			<div id ="experience" class="entries">
+				<div class="container">
+					If you can read this, something has gone horribly wrong.
+				</div>
 			</div>
 		</div>
-		
 		<br>
 		<br>
 		
 	</div>
 	
 	<footer id="about" class="container footer">
-		<p class="float-right"><a href="#header">Back to top</a></p>
-		<p>This website was built with the <a href="http://getskeleton.com/">Skeleton Framework</a></p>
+		<p class="float-right"><a href="#top">Back to top</a></p>
+		<p>This website was built with the <a href="http://getskeleton.com/">Skeleton</a> and <a href="https://reactjs.org/">React</a> Frameworks</p>
 		<p>All logo images taken from <a href="https://thenounproject.com">The Noun Project</a>
 		<p><a href="https://thenounproject.com/search/?q=project&i=1969751">Header image by Nithinan Tatah</a></p>
 		<p><a href="https://thenounproject.com/search/?q=skills&i=2757522">Skills image by Eucalyp</a></p>
