@@ -15,7 +15,7 @@
     "ansi-styles": "^3.2.1",
     "babel-cli": "^6.26.0",
     "babel-preset-react-app": "^3.1.2",
-    "browserslist": "^4.16.4",
+    "browserslist": "^4.16.5",
     "buffer-from": "^1.1.1",
     "caniuse-lite": "^1.0.30001208",
     "chalk": "^2.4.2",
