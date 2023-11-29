@@ -9,27 +9,75 @@
 		<technology></technology>
 		<url></url>
 	</entry>
+
+	<section title="experience">
+		<entry style="left">
+			<title>Shiver Entertainment</title>
+			<subtitle>Unreal Engine Optimization Specialists</subtitle>
+			<description>
+				Used as a trusted contractor by several AAA studios, Shiver Entertainment is one of the foremost experts in optimizing Unreal Engine software to run on lower powered systems (particularly the Nintendo Switch).
+				Despite having been acquired by Embracer Group by way of Saber Interactive, Shiver is perhaps most commonly known for their close working relationship with Warner Brothers Games and subsidiaries, with several major titles having their Switch ports done by Shiver.
+			</description>
+			<technology>Unreal Engine | C++ | Blueprint</technology>
+			<url>https://www.shiver.net</url>
+		</entry>
+		
+		<entry style="left">
+			<title>Virtel</title>
+			<subtitle>Virtual Reality Language Learning</subtitle>
+			<description>
+				Virtel was a small team working to create software for foreign language education in Virtual Reality.
+				Although now defunct, the team was at one point poised to publish an initial package of Latin American Spanish learning environments and activities.
+				</description>
+			<technology>Virtual Reality | Unity | C#</technology>
+			<url></url>
+		</entry>
+		
+		<entry style="left">
+			<title>Mozenda</title>
+			<subtitle>Commercial Web Scraping</subtitle>
+			<description>
+				Mozenda is a SaaS Web Scraping company based out of Utah.
+				Clients contract an individual specialist to design and customize agents built using Mozenda's proprietary software, as well as data post-processing and formatting.
+				</description>
+			<technology>HTML/CSS | XML | JavaScript</technology>
+			<url>https://www.mozenda.com/</url>
+		</entry>
+		
+	</section>
 	
 	<section title="skills">
+		<entry style="left">
+			<title>Unreal Engine Development</title>
+			<subtitle></subtitle>
+			<description>
+				With the success of Fortnite, Epic games has basically cemented their place in the gaming world as "One Engine/One Game".
+				Good thing that Engine so powerful.
+			</description>
+			<technology>C++ | Blueprint Scripting | Python Integration | Program Structure</technology>
+			<url></url>
+		</entry>
+		
+		<entry style="left">
+			<title>Console Development</title>
+			<subtitle></subtitle>
+			<description>
+				Console development adds just one more layer of complexity to everything else that needs to be considered when it comes to the development process.
+				Fortunately once the hurdles are past, development is just as smooth as any other project (not smooth).
+			</description>
+			<technology>C++ | Console Profiling Tools | Cert Requirements</technology>
+			<url></url>
+		</entry>
+
 		<entry style="left">
 			<title>Embedded Systems</title>
 			<subtitle></subtitle>
 			<description>
 				Very familiar with the C language, having worked with Arduino, the MSP430, and the PINQ board.
 				Also includes (tangentially related) experience using FPGAs and building software defined processors.
+				"I hope you're tired of Object Oriented Programming!"
 			</description>
 			<technology>C | Assembly | Verilog | Linux Drivers</technology>
-			<url></url>
-		</entry>
-		
-		<entry style="left">
-			<title>Android Development</title>
-			<subtitle></subtitle>
-			<description>
-				Building apps for the Android Ecosystem entails understanding Java, and also knowing the all of the Life-cycle stuff that comes with the API.
-				There's also the need to understand app design best practices to make a good UI.
-			</description>
-			<technology>Java | XML | Android Studio</technology>
 			<url></url>
 		</entry>
 		
@@ -43,20 +91,42 @@
 			<technology>Graphs | Sorting | Heuristics | "Big O" | Dynamic Programming</technology>
 			<url></url>
 		</entry>
-		
-		<entry style="left">
-			<title>Version and Package Control</title>
-			<subtitle></subtitle>
-			<description>
-				You want to keep all your files in order, but some absolute lunatic has the audacity to try to work on the same project!
-				We can figure something out, I'm sure.
-			</description>
-			<technology>Git | Github | Npm</technology>
-			<url></url>
-		</entry>
 	</section>
 
 	<section title="projects">
+		<entry style="left">
+			<title>Hogwarts Legacy</title>
+			<subtitle>"Yer a Skeletal Mesh, Harry"</subtitle>
+			<description>
+				Certainly the most Wizard-y game in recent memory; Hogwarts Legacy succeeded in bring ingthe Magical world to life in a way that other games can only dream of.
+				I'm so tired of looking at robes.
+			</description>
+			<technology>Unreal | C++ | Python | SQL</technology>
+			<url>https://www.hogwartslegacy.com/en-us</url>
+		</entry>
+
+		<entry style="left">
+			<title>Mortal Kombat 1</title>
+			<subtitle>"I don't think the model is wrong, that's just how the finishing move looks..."</subtitle>
+			<description>
+				Have you ever wondered: "What would happen if I punched that guy really hard in the neck?"
+				Well, we have the answer!: He would die.
+			</description>
+			<technology>Unreal | C++ | Python | Maya</technology>
+			<url>https://www.mortalkombat.com/en-us</url>
+		</entry>
+
+		<entry style="left">
+			<title>Ongoing Work</title>
+			<subtitle>[REDACTED]</subtitle>
+			<description>
+				Nothing to see here!
+				Unless you're hiring/investing, then it's really cool and you should email me to talk about it!
+			</description>
+			<technology>Unreal | C++ | Python | AWS Gamelift | JavaScript</technology>
+			<url></url>
+		</entry>
+		
 		<entry style="left">
 			<title>Distraction Break</title>
 			<subtitle>Time Management through Interruption</subtitle>
@@ -66,17 +136,6 @@
 			</description>
 			<technology>HTML/CSS | JavaScript | Chrome API</technology>
 			<url>https://chrome.google.com/webstore/detail/distract-break/gnkddjnjkddnhdlokndnlfehpcahnfba?hl=en-US</url>
-		</entry>
-		
-		<entry style="left">
-			<title>American Brands</title>
-			<subtitle>Prototype Websites to help you buy American</subtitle>
-			<description>
-				Working in conjunction with some colleagues who had an idea but no programming skills, American Brands has the goal of building an system of verifying the origin and contents of products that claim to be "Made in the USA".
-				My role in project was mostly limited to web design and tech logistics.
-			</description>
-			<technology>HTML/CSS | Bootstrap</technology>
-			<url>American/index.html</url>
 		</entry>
 		
 		<entry style="left">
@@ -100,42 +159,6 @@
 			</description>
 			<technology>HTML/CSS | JavaScript</technology>
 			<url>food_wheel.html</url>
-		</entry>
-	</section>
-
-	<section title="experience">
-		<entry style="left">
-			<title>Virtel</title>
-			<subtitle>Virtual Reality Language Learning</subtitle>
-			<description>
-				Virtel was a small team working to create software for foreign language education in Virtual Reality.
-				Although now defunct, the team was at one point poised to publish an initial package of Latin American Spanish learning environments and activities.
-				</description>
-			<technology>Virtual Reality | Unity | C#</technology>
-			<url></url>
-		</entry>
-		
-		<entry style="left">
-			<title>Mozenda</title>
-			<subtitle>Commercial Web Scraping</subtitle>
-			<description>
-				Mozenda is a SaaS Web Scraping company based out of Utah.
-				Clients contract an individual specialist to design and customize agents built using Mozenda's proprietary software, as well as data post-processing and formatting.
-				</description>
-			<technology>HTML/CSS | XML | JavaScript</technology>
-			<url>https://www.mozenda.com/</url>
-		</entry>
-		
-		<entry style="left">
-			<title>BYU Retail Technology</title>
-			<subtitle>Support that Covers all the Holes</subtitle>
-			<description>
-				BYU Retail Technology is the department that is responsible for covering every part of BYU that has to do with Food Service and Housing.
-				Surprisingly enough, it is not directly associated with the Office of IT Support, but is instead directly under Housing.
-				Because of that, I got to work with a LOT of different things, from Register UIs to Credit Card Systems.
-			</description>
-			<technology>Hardware | Windows Admin</technology>
-			<url></url>
 		</entry>
 	</section>
 </xml>
