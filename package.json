@@ -74,7 +74,7 @@
     "mime-db": "^1.47.0",
     "mime-types": "^2.1.30",
     "mimic-fn": "^2.1.0",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "ms": "^2.1.2",
     "neo-async": "^2.6.2",
     "node-releases": "^1.1.71",
