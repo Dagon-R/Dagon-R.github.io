@@ -12,13 +12,13 @@
 
 	<section title="experience">
 		<entry style="left">
-			<title>Shiver Entertainment</title>
-			<subtitle>Unreal Engine Optimization Specialists</subtitle>
+			<title>Shiver Entertainment (Nintendo)</title>
+			<subtitle>Optimization Specialist Engineer</subtitle>
 			<description>
-				Used as a trusted contractor by several AAA studios, Shiver Entertainment is one of the foremost experts in optimizing Unreal Engine software to run on lower powered systems (particularly the Nintendo Switch).
-				Despite having been acquired by Embracer Group by way of Saber Interactive, Shiver is perhaps most commonly known for their close working relationship with Warner Brothers Games and subsidiaries, with several major titles having their Switch ports done by Shiver.
+				Used as a trusted contractor by several AAA studios, Shiver Entertainment is one of the foremost experts in optimizing software to run on lower powered systems (particularly the Nintendo Switch).
+				Despite having been acquired by Nintendo, Shiver is perhaps most commonly known for their close working relationship with Warner Brothers Games and subsidiaries, with several major titles having their Switch ports done by Shiver.
 			</description>
-			<technology>Unreal Engine | C++ | Blueprint</technology>
+			<technology>Unreal Engine | C++ | Profiling | Optimization</technology>
 			<url>https://www.shiver.net</url>
 		</entry>
 		
@@ -27,7 +27,7 @@
 			<subtitle>Virtual Reality Language Learning</subtitle>
 			<description>
 				Virtel was a small team working to create software for foreign language education in Virtual Reality.
-				Although now defunct, the team was at one point poised to publish an initial package of Latin American Spanish learning environments and activities.
+				Although now defunct, the startup was at one point poised to publish an initial package of Latin American Spanish learning environments and activities.
 				</description>
 			<technology>Virtual Reality | Unity | C#</technology>
 			<url></url>
@@ -48,13 +48,13 @@
 	
 	<section title="skills">
 		<entry style="left">
-			<title>Unreal Engine Development</title>
+			<title>Game Engine Development</title>
 			<subtitle></subtitle>
 			<description>
-				With the success of Fortnite, Epic games has basically cemented their place in the gaming world as "One Engine/One Game".
-				Good thing that Engine so powerful.
+				Working within various Engines, there's a lot of things that you need to pick up to keep things moving forward.
+				Keeping them straight is a lot easier than re-learning every time you swap projects!
 			</description>
-			<technology>C++ | Blueprint Scripting | Python Integration | Program Structure</technology>
+			<technology>C++ | Unreal | Unity | Python Tools | Optimization</technology>
 			<url></url>
 		</entry>
 		
@@ -107,7 +107,7 @@
 
 		<entry style="left">
 			<title>Mortal Kombat 1</title>
-			<subtitle>"I don't think the model is wrong, that's just how the finishing move looks..."</subtitle>
+			<subtitle>"I don't think the skeleton is wrong, that's just how the fatality looks..."</subtitle>
 			<description>
 				Have you ever wondered: "What would happen if I punched that guy really hard in the neck?"
 				Well, we have the answer!: He would die.
@@ -120,22 +120,22 @@
 			<title>Ongoing Work</title>
 			<subtitle>[REDACTED]</subtitle>
 			<description>
-				Nothing to see here!
-				Unless you're hiring/investing, then it's really cool and you should email me to talk about it!
+				Nothing to see here, some projects remain under NDA.
 			</description>
-			<technology>Unreal | C++ | Python | AWS Gamelift | JavaScript</technology>
+			<technology>C++ | Python | P4 Source Control | AWS Gamelift | Proprietary Engine</technology>
 			<url></url>
 		</entry>
 		
 		<entry style="left">
-			<title>Distraction Break</title>
-			<subtitle>Time Management through Interruption</subtitle>
+			<title>H3VR Gun Game</title>
+			<subtitle>Now with a statistically unlikely chance of giving you bad results!</subtitle>
 			<description>
-				Distract break is a simple extension that allows you to build a list of distracting sites and configure a limiting timer.
-				The app differentiates between time spent on productive sites and time spent on blacklisted ones, and increments the timer when more time is spent unproductively.
+				H3VR is the single largest and best engineered Gun simulator in VR.
+				Based on its extensive modding support, Gun Game brings the classic game mode from Call of Duty into H3.
+				Originally developed by KacperObara, I developed several improvements that I had wanted included in the mod, which were then merged back in to main.
 			</description>
-			<technology>HTML/CSS | JavaScript | Chrome API</technology>
-			<url>https://chrome.google.com/webstore/detail/distract-break/gnkddjnjkddnhdlokndnlfehpcahnfba?hl=en-US</url>
+			<technology>Unity | C#</technology>
+			<url>https://github.com/Dagon-R/H3VR-GunGame</url>
 		</entry>
 		
 		<entry style="left">
@@ -151,7 +151,7 @@
 		
 		<entry style="left">
 			<title>Food Wheel</title>
-			<subtitle>For when your Friends are Unhelpful</subtitle>
+			<subtitle>All your Friends are Unhelpful</subtitle>
 			<description>
 				This is a really simple page that uses your location data to pull a list of local restaurants and select one at random.
 				There is a bit of customization if you want to limit some options, but it's very rudimentary.
