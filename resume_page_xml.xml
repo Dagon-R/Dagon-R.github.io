@@ -12,6 +12,18 @@
 
 	<section title="experience">
 		<entry style="left">
+			<title>Truck Stop Fitness</title>
+			<subtitle>Chief Operating Officer</subtitle>
+			<description>
+				A small startup business focused around providing health and wellness facilities to long-haul truckers throughout the US.
+				Built connections, developed a business plan, and solicited financial investment.
+				Currently on hiatus while other founders pivot to different projects.
+			</description>
+			<technology>Business Management | Startup Finance | Stakeholder Communication</technology>
+			<url></url>
+		</entry>
+		
+		<entry style="left">
 			<title>Shiver Entertainment (Nintendo)</title>
 			<subtitle>Optimization Specialist Engineer</subtitle>
 			<description>
@@ -20,6 +32,18 @@
 			</description>
 			<technology>Unreal Engine | C++ | Profiling | Optimization</technology>
 			<url>https://www.shiver.net</url>
+		</entry>
+
+		<entry style="left">
+			<title>Frontline Foam</title>
+			<subtitle>Manufacturing Manager</subtitle>
+			<description>
+				A local small business devoted to custom Nerf foam blasters.
+				I worked as the head of the manufacturing department, while also spending time with marketing and product development.
+				Learned manufacturing methods, marketing plans, and helped design new systems to improve order fulfillment and marketing workflows.
+			</description>
+			<technology>Business Management | Metalworking | Social Media Marketing | Process Improvement</technology>
+			<url></url>
 		</entry>
 		
 		<entry style="left">
@@ -55,6 +79,17 @@
 				Keeping them straight is a lot easier than re-learning every time you swap projects!
 			</description>
 			<technology>C++ | Unreal | Unity | Python Tools | Optimization</technology>
+			<url></url>
+		</entry>
+
+		<entry style="left">
+			<title>Game Design</title>
+			<subtitle></subtitle>
+			<description>
+				Working within the concepts of game theory, interpersonal interactions, and simple fun experiences.
+				Focus on simple and explicit documentation, plus a deep understanding of implementation goals.
+			</description>
+			<technology>Unreal | Unity | Documentation</technology>
 			<url></url>
 		</entry>
 		
@@ -117,12 +152,13 @@
 		</entry>
 
 		<entry style="left">
-			<title>Ongoing Work</title>
-			<subtitle>[REDACTED]</subtitle>
+			<title>Unreleased Title</title>
+			<subtitle></subtitle>
 			<description>
-				Nothing to see here, some projects remain under NDA.
+				Although some projects from previous jobs remain under NDA, the experience is still real.
+				Design, engineering, product management, this project involved wearing a lot of hats.
 			</description>
-			<technology>C++ | Python | P4 Source Control | AWS Gamelift | Proprietary Engine</technology>
+			<technology>C++ | Python | Game Design | AWS Gamelift | Proprietary Engine</technology>
 			<url></url>
 		</entry>
 		
@@ -132,33 +168,22 @@
 			<description>
 				H3VR is the single largest and best engineered Gun simulator in VR.
 				Based on its extensive modding support, Gun Game brings the classic game mode from Call of Duty into H3.
-				Originally developed by KacperObara, I developed several improvements that I had wanted included in the mod, which were then merged back in to main.
+				Originally developed by KacperObara, I designed several gameplay improvements that I had wanted included in the mod, which were then merged back into main.
 			</description>
 			<technology>Unity | C#</technology>
 			<url>https://github.com/Dagon-R/H3VR-GunGame</url>
 		</entry>
 		
 		<entry style="left">
-			<title>Capstone Project</title>
-			<subtitle>Self Aligning Free Space Optics</subtitle>
+			<title>Balloons and Dynamite</title>
+			<subtitle>Colaborative Parkitect Mod</subtitle>
 			<description>
-				My Capstone project team was contracted by Raytheon to design and develop a system that would allow for easy self-alignment of a Free Space Optics (FSO) systems.
-				By using Computer Vision and an Arduino micro controller we were able to create a system that could identify and pivot towards a target at distances of up to one Kilometer.
+				Working within the design focus of the theme park management game, Parkitect, this project demonstrates an understanding of the workflow for a small design project.
+				The design doc linked below is my own, but ongoing work is being done by multiple community content creators, who have signed onto the vision for developing the mod and subsequent campaign.
 			</description>
-			<technology>C++ | Python | Arduino | OpenCV</technology>
-			<url></url>
+			<technology>C# | Game Design | Project Management </technology>
+			<url>https://docs.google.com/document/d/1yRpanm_nhqS4UiGxILZwccs1jlKMdkcA0WiHAgs9TMQ/edit?usp=sharing</url>
 		</entry>
 		
-		<entry style="left">
-			<title>Food Wheel</title>
-			<subtitle>All your Friends are Unhelpful</subtitle>
-			<description>
-				This is a really simple page that uses your location data to pull a list of local restaurants and select one at random.
-				There is a bit of customization if you want to limit some options, but it's very rudimentary.
-				Perfect when nobody will agree on anything, because it will easily prove that your group can agree on what everybody DOESN'T want.
-			</description>
-			<technology>HTML/CSS | JavaScript</technology>
-			<url>food_wheel.html</url>
-		</entry>
 	</section>
 </xml>
